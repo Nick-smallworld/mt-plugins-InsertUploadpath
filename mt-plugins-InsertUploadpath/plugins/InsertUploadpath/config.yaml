@@ -1,0 +1,16 @@
+name: InsertUploadpath
+id:   InsertUploadpath
+key:  InsertUploadpath
+version: 0.1
+author_link: https://github.com/Nick-smallworld
+author_name: Takeshi Nick Osanai
+l10n_class: InsertUploadpath::L10N
+description: <MT_TRANS phrase="DESCRIPTION">
+applications:
+    cms:
+        callbacks:
+            template_source.asset_upload: $InsertUploadpath::InsertUploadpath::CMS::_replace_template
+
+l10n_lexicon:
+    ja:
+      DESCRIPTION: アイテムのアップロード画面で、入力欄にYYYY/mm形式の文字列を挿入するだけの単純なプラグインです。シックス・アパートブログのアイテムアップロード用に作ってみました。DBにカラムを作りたくなかったので、単純に&lt;MTDate&gt;で文字列を入れてます。
